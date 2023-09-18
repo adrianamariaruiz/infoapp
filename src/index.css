@@ -1,0 +1,45 @@
+.navbar__icon{
+  height: 40px;
+  width: auto;
+}
+
+.home__title{
+  font-size: 60px;
+}
+
+.home__container--grid{
+  background: rgb(230, 229, 229);
+  padding: 5px 0;
+}
+.home__border--container-grid{
+  border: 1px solid rgb(189, 189, 189);
+}
+
+.home__container--bg{
+  background: rgb(255, 184, 29);
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.container__pagination{
+  height: 40px;
+}
+
+.pagination__btn--size{
+  min-width: 100px;
+  margin: 2px 0;
+}
+
+
+
+.footer__logo{
+  height: 50px;
+  width: auto;
+}
+
+.footer__icons{
+  height: 30px;
+  width: 30px;
+}

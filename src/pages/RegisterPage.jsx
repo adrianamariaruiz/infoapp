@@ -1,13 +1,14 @@
 import { useState, useContext, useEffect } from "react";
 import { InfoContext } from "../context/InfoContext";
-import { useLoaderData, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Pagination from "../components/Pagination";
+import registers from "../helpers/DataMock";
 
 const RegisterPage = () => {
-  const { registers } = useLoaderData();
+  // const { registers } = useLoaderData();
   const navegate = useNavigate();
   const { setInfoKey } = useContext(InfoContext);
-  
+
   const [search, setSearch] = useState("");
   const [currentPage, setCurrentPage] = useState(0);
   const [pageState, setPageState] = useState(10);
@@ -21,7 +22,7 @@ const RegisterPage = () => {
       ...registers[id],
     }));
     setDataWithIds(dataWithIdsArray);
-  }, [registers]);
+  }, []);
 
   useEffect(() => {
     const total = Math.ceil(dataWithIds.length / pageState);
@@ -96,7 +97,7 @@ const RegisterPage = () => {
         <div className="text-center py-2">
           <h1 className="parrafo-paises">Registros</h1>
         </div>
-        
+
         <form className="mt-2 d-flex justify-content-center" role="search">
           <input
             className="form-control me-2 w-50 focus-ring focus-ring-warning border-warning"
@@ -130,32 +131,39 @@ const RegisterPage = () => {
               </select>
             </div>
           </div>
-          <table className="table table-striped table-hover">
-            <thead>
-              <tr>
-                <th>ID</th>
-                <th>Nombre</th>
-                <th>Apellido</th>
-                <th>Celular</th>
-                <th>Estado</th>
-              </tr>
-            </thead>
-            {filterRegisters().map((infoKey, index) => (
-              <tbody key={index} onClick={() => selectOption(infoKey.id)} className="pointer">
+
+          <div className="table-responsive">
+            <table className="table table-striped table-hover">
+              <thead>
                 <tr>
-                  <td>{infoKey.id}</td>
-                  <td>{infoKey.nombre}</td>
-                  <td>{infoKey.apellido}</td>
-                  <td>{infoKey.celular}</td>
-                  <td>{infoKey.estado}</td>
+                  <th>ID</th>
+                  <th>Nombre</th>
+                  <th>Apellido</th>
+                  <th>Celular</th>
+                  <th>Estado</th>
                 </tr>
+              </thead>
+              <tbody>
+                {filterRegisters().map((infoKey, index) => (
+                  <tr
+                    key={index}
+                    onClick={() => selectOption(infoKey.id)}
+                    className="pointer"
+                  >
+                    <td>{infoKey.id}</td>
+                    <td>{infoKey.nombre}</td>
+                    <td>{infoKey.apellido}</td>
+                    <td>{infoKey.celular}</td>
+                    <td>{infoKey.estado}</td>
+                  </tr>
+                ))}
               </tbody>
-            ))}
-          </table>
-          
-          <div className="d-flex gap-3 h-100 p-2 justify-content-end align-items-center">
+            </table>
+          </div>
+
+          <div className="d-flex flex-wrap gap-3 h-100 p-2 justify-content-end align-items-center">
             <div className="d-flex align-items-center">
-              <p className="fw-semibold">filas por pagina</p>
+              <p className="fw-semibold mb-0">filas por pagina</p>
             </div>
             <div>
               <select
@@ -170,10 +178,10 @@ const RegisterPage = () => {
             </div>
             <div className="d-flex container__pagination">
               <Pagination
-                previewPage={previewPage} 
+                previewPage={previewPage}
                 currentPage={currentPage}
-                totalPages ={totalPages}
-                setCurrentPage={setCurrentPage} 
+                totalPages={totalPages}
+                setCurrentPage={setCurrentPage}
                 nextPage={nextPage}
               />
             </div>

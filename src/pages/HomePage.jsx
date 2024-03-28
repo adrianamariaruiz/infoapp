@@ -1,34 +1,38 @@
+import {
+  BsFillJournalBookmarkFill,
+  BsGeoAlt,
+  BsPencilSquare,
+  BsPeople,
+  BsPersonWalking,
+} from "react-icons/bs";
 
 const HomePage = () => {
   return (
     <>
       <div className="d-flex flex-column align-items-center py-4 gap-5">
         <div className="d-flex flex-column align-items-center text-center">
-          <h1 className="text-warning fw-bold home__title">Galápp</h1>
-          <h2 >Cultivamos la información del campo</h2>
+          <h1 className="text-warning fw-bold home__title">InfoApp</h1>
+          <h2>Manejamos la información del usuario</h2>
         </div>
 
         <div className="d-flex justify-content-center w-100">
-          <div className="d-flex flex-column text-center w-50 p-2">
-            <div className="container d-flex">
+          <div className="d-flex flex-column text-center p-2">
+            <div className="container d-flex flex-wrap">
               <div className="row">
-                <div className="col-12 col-md-4">
+                <div className="col-4 col-md-4 col-lg-2 d-flex align-items-center justify-content-center">
                   <img
-                    src="src/assets/galapp.webp"
-                    alt="galapp"
-                    className="img-fluid"
-                    />
+                    src="src/assets/cel-image.jpg"
+                    alt="infoapp"
+                    className="img-fluid img__cel"
+                  />
                 </div>
-                <div className="fs-5 pt-2 col-12 col-md-8">
+                <div className="fs-5 p-2 col-8 col-md-8 col-lg-10">
                   <h2>Quienes somos?</h2>
                   <p>
-                    Galápago Agroconsultores es un CRM busca transformar el agro a
-                    partir del uso de los datos y la toma informada de decisiones.
-                  </p>
-                  <p>
-                    Galápp está especialmente pensada para las particularidades de
-                    su cultivo, ya que ha sido diseñada por gente del campo para
-                    gente como usted.
+                    InfoApp está especialmente pensada para las particularidades
+                    de su registro, ya que ha sido diseñada por personas que se
+                    dedican a gestionar información de los usuarios y conocen
+                    las necesidades de cada empresa.
                   </p>
                 </div>
               </div>
@@ -37,12 +41,12 @@ const HomePage = () => {
         </div>
 
         <div className="d-flex flex-column align-items-center w-100 px-2 pt-4 home__container--bg">
-          <h2>¿Qué obtiene con Galápp?</h2>
+          <h2>¿Qué obtiene con InfoApp?</h2>
           <div className="fs-5">
             <ul>
               <li>
-                Capturar todos los datos de su finca: cosecha, controles
-                sanitarios, ventas, entre otros
+                Capturar todos los datos de su usuario: nombre, dirección,
+                email, telefono, entre otros
               </li>
               <li>Posibilidad de acceso a Analytics</li>
               <li>Soporte</li>
@@ -53,43 +57,51 @@ const HomePage = () => {
             </ul>
           </div>
           <div className="w-100 d-flex justify-content-center home__container--bg">
-            <img src="src/assets/infoGalapp.webp" alt="infoGalapp" className="img-fluid"/>
+            <img
+              src="src/assets/infoGalapp.webp"
+              alt="infoapp"
+              className="img-fluid"
+            />
           </div>
         </div>
 
-        <div className="d-flex flex-column justify-content-center align-items-center text-center w-100 px-4">
-          <div className="w-50">
-            <h2>Galápp RTC</h2>
+        <div className="d-flex flex-column justify-content-center align-items-center text-center w-100 w-md-40 px-4">
+          <div className="">
+            <h2>InfoApp RTC</h2>
             <p className="fs-5">
-              Galápp está compuesta por varios módulos de captura donde los RTCs
-              pueden ingresar la información directamente en campo y mediante una
-              app en su celular sin internet.
+              InfoApp está compuesta por varios módulos de captura donde los
+              RTCs pueden ingresar la información directamente en el lugar y
+              mediante una app en su celular sin internet.
             </p>
           </div>
           <div className="container">
             <div className="row">
               <div className="col col-sm-6 col-md-4 text-primary home__border--container-grid home__container--grid p-2">
-                <img src="src/assets/agricultor.webp" alt="agricultor" />
-                <p className="fw-semibold">Agricultor:</p>
+                <BsFillJournalBookmarkFill className="mx-2 my-2 image-size text-dark p-2 border border-primary border-4" />
+                <p className="fw-semibold">Personal:</p>
                 <p>a quién visitó</p>
               </div>
+
               <div className="col col-sm-6 col-md-4 text-danger home__border--container-grid home__container--grid p-2">
-                <img src="src/assets/finca.webp" alt="finca" />
-                <p className="fw-semibold">Finca:</p>
-                <p>información de la finca visitada</p>
+                <BsGeoAlt className="mx-2 my-2 image-size text-dark p-2 border border-danger border-4" />
+                <p className="fw-semibold">Ubicación:</p>
+                <p>información del lugar visitado</p>
               </div>
+
               <div className="col col-sm-6 col-md-4 text-primary home__border--container-grid home__container--grid p-2">
-                <img src="src/assets/visitaFinca.webp" alt="visita finca" />
-                <p className="fw-semibold">Visita Finca:</p>
+                <BsPersonWalking className="mx-2 my-2 image-size text-dark p-2 border border-warning border-4" />
+                <p className="fw-semibold">Visita negocio:</p>
                 <p>
-                  visitas realizadas, estado actual del cultivo y recomendaciones
-                  propuestas
+                  visitas realizadas, estado actual del la información y
+                  recomendaciones propuestas
                 </p>
-             </div>
+              </div>
+
               <div className="col col-sm-6 col-md-4 text-danger home__border--container-grid home__container--grid p-2">
                 <img
-                  src="src/assets/visitaMostrador.webp"
+                  src="src/assets/mostrador.png"
                   alt="visita mostrador"
+                  className="mx-2 my-2 image-size text-dark p-2 border border-warning border-4"
                 />
                 <p className="fw-semibold">Visita mostrador:</p>
                 <p>
@@ -97,20 +109,18 @@ const HomePage = () => {
                   visita
                 </p>
               </div>
+
               <div className="col col-sm-6 col-md-4 text-primary home__border--container-grid home__container--grid p-2">
-                <img
-                  src="src/assets/formacionGrupal.webp"
-                  alt="formación grupal"
-                />
+                <BsPeople className="mx-2 my-2 image-size text-dark p-2 border border-success border-4" />
                 <p className="fw-semibold">Formación grupal:</p>
                 <p>eventos grupales, capacitaciones, asistentes</p>
               </div>
+
               <div className="col col-sm-6 col-md-4 text-danger home__border--container-grid home__container--grid p-2">
-                <img src="src/assets/admin.webp" alt="admin" />
+                <BsPencilSquare className="mx-2 my-2 image-size text-dark p-2 border border-primary border-4" />
                 <p className="fw-semibold">Tareas administrativas:</p>
                 <p>
-                  otras labores como generación de informes, mantenimiento del
-                  auto, etc.
+                  otras labores como generación de informes, mantenimiento, etc.
                 </p>
               </div>
             </div>

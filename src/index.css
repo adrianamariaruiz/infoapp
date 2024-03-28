@@ -1,5 +1,5 @@
 .navbar__icon{
-  height: 40px;
+  height: 20px;
   width: auto;
 }
 
@@ -19,6 +19,16 @@
   background: rgb(255, 184, 29);
 }
 
+.image-size{
+  height: 80px;
+  width: auto;
+  background-color: white;
+}
+
+/* .img__cel{
+  max-width: 100px;
+} */
+
 .pointer{
   cursor: pointer;
 }
@@ -31,8 +41,6 @@
   min-width: 100px;
   margin: 2px 0;
 }
-
-
 
 .footer__logo{
   height: 50px;

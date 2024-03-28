@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -6,32 +6,47 @@ const Footer = () => {
       <div className="container">
         <div className="row d-flex text-center align-items-center justify-content-center">
           <div className="col-12 col-md-4 d-flex gap-2 justify-content-center">
-            <img src="src/assets/logo.webp" alt="logo Galapp" className="footer__logo"/>
-            <p className="fs-1 text-warning fw-bold">Galápp</p>
+            <p className="fs-1 text-warning fw-bold">InfoApp</p>
           </div>
           <div className="col-12 d-flex gap-2 col-md-4 justify-content-center">
             <p className="fs-5">Síguenos</p>
-            <Link to="https://www.instagram.com/galapagoagro/?hl=es-la">
-              <img src="src/assets/instagram.svg" alt="instagram" className="footer__icons"/>
+            <Link to="https://www.instagram.com">
+              <img
+                src="src/assets/instagram.svg"
+                alt="instagram"
+                className="footer__icons"
+              />
             </Link>
-            <Link to="https://web.facebook.com/galapagoagro?_rdc=1&_rdr">
-              <img src="src/assets/facebook.svg" alt="facebook" className="footer__icons"/>
+            <Link to="https://web.facebook.com">
+              <img
+                src="src/assets/facebook.svg"
+                alt="facebook"
+                className="footer__icons"
+              />
             </Link>
-            <Link to="https://twitter.com/i/flow/login?redirect_after_login=%2Fgalapagoagro">
-              <img src="src/assets/twiter.svg" alt="twiter" className="footer__icons"/>
+            <Link to="https://twitter.com">
+              <img
+                src="src/assets/twiter.svg"
+                alt="twiter"
+                className="footer__icons"
+              />
             </Link>
-            <Link to="https://www.linkedin.com/company/galapagoagro/">
-              <img src="src/assets/linkedin.svg" alt="linkedIn" className="footer__icons"/>
+            <Link to="https://www.linkedin.com">
+              <img
+                src="src/assets/linkedin.svg"
+                alt="linkedIn"
+                className="footer__icons"
+              />
             </Link>
           </div>
           <div className="col-12 col-md-4">
-            <p>Servicio al cliente: +57 3504460479</p>
-            <p>Ventas: +57 3160232998</p>
+            <p>Servicio al cliente: +57 1231231231</p>
+            <p>Ventas: +57 1231231231</p>
           </div>
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

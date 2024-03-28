@@ -1,9 +1,10 @@
-import { useLoaderData } from "react-router-dom";
+// import { useLoaderData } from "react-router-dom";
+import registers from "../helpers/DataMock";
 import { useContext } from "react";
 import { InfoContext } from "../context/InfoContext";
 
 const DetailPage = () => {
-  const { registers } = useLoaderData();
+  // const { registers } = useLoaderData();
   const { infoKey } = useContext(InfoContext);
 
   const handleInputChange = () => {
@@ -13,7 +14,9 @@ const DetailPage = () => {
   return (
     <>
       <div className="container pt-4 d-flex flex-column align-items-center">
-        <h1 className="text-warning fs-1 fw-bold">Detalles de la informacion</h1>
+        <h1 className="text-warning fs-1 fw-bold">
+          Detalles de la informacion
+        </h1>
         <div className="p-4 w-75">
           <form className="card shadow bg-secondary-subtle p-4 d-flex flex-column">
             {Object.entries(registers[infoKey]).map(([key, value], index) => (

@@ -1,9 +1,7 @@
-# Galápp
-
-Puede ver como funciona en este video en [Loom](https://www.loom.com/share/0e784449cc4641708ed2e8349f157531?sid=b2421d21-188c-47f6-a26e-2f080e2a7237)
+# InfoApp
 
 <p align="center" width="100%">
-    <img width="60%" src="src/assets/readme/home.webp">
+    <img width="60%" src="src/assets/readme/home.png">
 </p>
 
 ## Proyecto
@@ -19,7 +17,7 @@ En la página de registro cuenta con varias funcionalidades, como lo son:
 - paginación: tiene la opción de mostrar de a 10 o de a 20 registros por página
 
 <p align="center" width="100%">
-    <img width="60%" src="src/assets/readme/filterAndSelect.webp">
+    <img width="60%" src="src/assets/readme/filterAndSelect.png">
 </p>
 
 
@@ -27,19 +25,19 @@ El proyecto fue realizado con React.js y para los estilos Bootstrap.
 
 <div>
     <p align="center" width="100%">
-        <img width="40%" src="./src/assets/readme/home.webp">
+        <img width="40%" src="./src/assets/readme/home.png">
     </p>
     <p align="center" width="100%">
-        <img width="40%" src="./src/assets/readme/home2.webp">
+        <img width="40%" src="./src/assets/readme/home2.png">
     </p>
     <p align="center" width="100%">
-        <img width="40%" src="./src/assets/readme/home3.webp">
+        <img width="40%" src="./src/assets/readme/home3.png">
     </p>
     <p align="center" width="100%">
-        <img width="40%" src="./src/assets/readme/register.webp">
+        <img width="40%" src="./src/assets/readme/register.png">
     </p>
     <p align="center" width="100%">
-        <img width="40%" src="./src/assets/readme/detail2.webp">
+        <img width="40%" src="./src/assets/readme/detailInfo.png">
     </p>
 </div>
 

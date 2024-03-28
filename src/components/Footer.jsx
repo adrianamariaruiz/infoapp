@@ -12,28 +12,28 @@ const Footer = () => {
             <p className="fs-5">Síguenos</p>
             <Link to="https://www.instagram.com">
               <img
-                src="src/assets/instagram.svg"
+                src="/assets/instagram.svg"
                 alt="instagram"
                 className="footer__icons"
               />
             </Link>
             <Link to="https://web.facebook.com">
               <img
-                src="src/assets/facebook.svg"
+                src="/assets/facebook.svg"
                 alt="facebook"
                 className="footer__icons"
               />
             </Link>
             <Link to="https://twitter.com">
               <img
-                src="src/assets/twiter.svg"
+                src="/assets/twiter.svg"
                 alt="twiter"
                 className="footer__icons"
               />
             </Link>
             <Link to="https://www.linkedin.com">
               <img
-                src="src/assets/linkedin.svg"
+                src="/assets/linkedin.svg"
                 alt="linkedIn"
                 className="footer__icons"
               />

@@ -21,7 +21,7 @@ const HomePage = () => {
               <div className="row">
                 <div className="col-4 col-md-4 col-lg-2 d-flex align-items-center justify-content-center">
                   <img
-                    src="src/assets/cel-image.jpg"
+                    src="/assets/cel-image.jpg"
                     alt="infoapp"
                     className="img-fluid img__cel"
                   />
@@ -58,7 +58,7 @@ const HomePage = () => {
           </div>
           <div className="w-100 d-flex justify-content-center home__container--bg">
             <img
-              src="src/assets/infoGalapp.webp"
+              src="/assets/infoGalapp.webp"
               alt="infoapp"
               className="img-fluid"
             />
@@ -99,7 +99,7 @@ const HomePage = () => {
 
               <div className="col col-sm-6 col-md-4 text-danger home__border--container-grid home__container--grid p-2">
                 <img
-                  src="src/assets/mostrador.png"
+                  src="/assets/mostrador.png"
                   alt="visita mostrador"
                   className="mx-2 my-2 image-size text-dark p-2 border border-warning border-4"
                 />
